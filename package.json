@@ -1,0 +1,49 @@
+{
+  "name": "stream-to-async-iterable",
+  "version": "1.0.4",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "oss@e107.com.ar",
+  "license": "MIT",
+  "bugs": "https://github.com/upcompass/stream-to-async-iterable/issues",
+  "homepage": "https://github.com/upcompass/stream-to-async-iterable",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --no-semi --single-quote --write",
+      "git add"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "@types/node": "^8.0.9",
+    "csv-parser": "^1.11.0",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.1",
+    "prettier": "^1.5.2",
+    "ts-jest": "^20.0.7",
+    "tslint": "^5.5.0",
+    "tslint-config-prettier": "^1.1.0",
+    "typescript": "^2.4.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "precommit": "lint-staged",
+    "prepare": "tsc"
+  }
+}
