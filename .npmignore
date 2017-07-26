@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# C9 folder
+.c9
