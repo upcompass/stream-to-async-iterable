@@ -1,4 +1,6 @@
 # stream-to-async-iterable
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/upcompass/stream-to-async-iterable.svg)](https://greenkeeper.io/)
 Converts a stream to an `AsyncIterable<T>`
 
 ## Usage
